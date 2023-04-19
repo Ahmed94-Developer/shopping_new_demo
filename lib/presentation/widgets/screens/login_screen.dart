@@ -277,7 +277,9 @@ class _LoginScreenState extends State<LoginScreen> {
         SnackBar snackBar = SnackBar(content: Text("Login Successfully..."));
        ScaffoldMessenger.of(context).showSnackBar(snackBar);
       } else {
-        Navigator.of(context).pushNamed(homeScreen);
+        SnackBar snackBar = SnackBar(content: Text("Error found.."));
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      //  Navigator.of(context).pushNamed(homeScreen);
 
       }
     }

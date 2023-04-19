@@ -218,6 +218,7 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "5.1.1"
+<<<<<<< HEAD
   equatable:
     dependency: "direct main"
     description:
@@ -225,6 +226,8 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.0.5"
+=======
+>>>>>>> 62c4ab2e611b471987454fb35809112fbdb35415
   fake_async:
     dependency: transitive
     description:
@@ -345,6 +348,7 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "4.8.0"
+<<<<<<< HEAD
   json_serializable:
     dependency: "direct dev"
     description:
@@ -352,6 +356,8 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "6.6.1"
+=======
+>>>>>>> 62c4ab2e611b471987454fb35809112fbdb35415
   lints:
     dependency: transitive
     description:
@@ -546,6 +552,7 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.2.7"
+<<<<<<< HEAD
   source_helper:
     dependency: transitive
     description:
@@ -553,6 +560,8 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.3.3"
+=======
+>>>>>>> 62c4ab2e611b471987454fb35809112fbdb35415
   source_span:
     dependency: transitive
     description:

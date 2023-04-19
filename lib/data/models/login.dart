@@ -1,9 +1,12 @@
 import 'dart:convert';
+import 'package:json_annotation/json_annotation.dart';
+part 'login.g.dart';
 
 Login loginFromJson(String str) => Login.fromJson(json.decode(str));
 
 String loginToJson(Login data) => json.encode(data.toJson());
 
+@JsonSerializable()
 class Login {
   Login({
     required this.status,
@@ -15,17 +18,13 @@ class Login {
   Data data;
   bool active;
 
-  factory Login.fromJson(Map<String, dynamic> json) => Login(
-    status: json["status"],
-    data: Data.fromJson(json["data"]),
-    active: json["active"],
-  );
+  factory Login.fromJson(Map<String, dynamic> json){
+   return _$LoginFromJson(json);
+  }
 
-  Map<String, dynamic> toJson() => {
-    "status": status,
-    "data": data.toJson(),
-    "active": active,
-  };
+  Map<String, dynamic> toJson() {
+    return _$LoginToJson(this);
+  }
 }
 
 class Data {

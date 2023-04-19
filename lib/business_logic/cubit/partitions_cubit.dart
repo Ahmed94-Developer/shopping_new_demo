@@ -8,7 +8,6 @@ part 'partitions_state.dart';
 
 class PartitionsCubit extends Cubit<PartitionsState> {
   final PartitionsRepository partitionsRepository;
-  List<Datum>?partitions;
 
   PartitionsCubit({required this.partitionsRepository}) : super(PartitionsInitial()){
     getPartitions();

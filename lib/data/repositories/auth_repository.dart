@@ -4,11 +4,9 @@ import 'package:dio/dio.dart';
 import 'package:shopping_new/data/models/login.dart';
 
 import '../../constants/strings.dart';
-import '../web_services/auth_client.dart';
 
 class AuthRepository{
   late Dio client;
-  late AuthClient authClient;
 
   AuthRepository(){
     client = Dio(
@@ -18,7 +16,6 @@ class AuthRepository{
 
       )
     );
-    authClient = AuthClient(client);
   }
 
   Future<dynamic?> LoginService(String name,String password) async{

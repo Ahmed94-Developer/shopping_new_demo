@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shopping_new/business_logic/cubit/partitions_cubit.dart';
+import 'package:shopping_new/presentation/widgets/partitions_item.dart';
 
 import '../../../data/models/paritions.dart';
 
@@ -59,32 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisSpacing: 2.0,
           crossAxisSpacing: 1.0,)
         ,itemBuilder: (BuildContext context, int index) {
-      return  Card(
-            elevation: 15,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15))),
-            child: Container(
-              padding: EdgeInsets.all(7),
-              alignment: Alignment.center,
-              height: 170,
-              child: Text(datalist[index].categoryName,style: TextStyle(color: Colors.white
-                  ,fontSize: 17),textAlign: TextAlign.center,),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  alignment: Alignment.center,
-
-                  image: NetworkImage(datalist[index].categoryImage,),
-                  fit: BoxFit.cover,
-
-                  colorFilter:
-                  ColorFilter.mode(Colors.black.withOpacity(0.5),
-                      BlendMode.darken),
-                )
-              ),
-
-
-            )
-
-          );
+      return PartitionsItems(partitionsItem: datalist[index]);
 
     }
     );

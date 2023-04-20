@@ -7,8 +7,8 @@ import 'package:shopping_new/business_logic/auth_cubit/login_cubit.dart';
 import 'package:shopping_new/constants/strings.dart';
 import 'package:shopping_new/data/repositories/auth_repository.dart';
 import 'package:shopping_new/data/repositories/partitions_repository.dart';
-import 'package:shopping_new/presentation/widgets/screens/home_screen.dart';
-import 'package:shopping_new/presentation/widgets/screens/login_screen.dart';
+import 'package:shopping_new/presentation/screens/home_screen.dart';
+import 'package:shopping_new/presentation/screens/login_screen.dart';
 
 import 'business_logic/cubit/partitions_cubit.dart';
 
